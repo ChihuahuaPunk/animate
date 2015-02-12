@@ -1,6 +1,14 @@
 @charset 'UTF-8';
 @import 'bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'plugins';
 
-body {
-    color: blue;
+#animate {
+    .section {
+        font: {
+            size: 30px;
+        }
+        text: {
+            align: center;
+        }
+    }
 }

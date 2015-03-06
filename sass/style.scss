@@ -2,6 +2,10 @@
 @import 'bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'plugins';
 
+body {
+  margin: 0;
+}
+
 #animate {
     .section {
         font: {
@@ -11,4 +15,10 @@
             align: center;
         }
     }
+}
+.escalopa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }

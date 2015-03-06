@@ -1,3 +1,6 @@
 .DS_Store
 css/
 .sass-cache/
+.rbenv-gemset
+Gemfile
+Gemfile.lock

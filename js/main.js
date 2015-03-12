@@ -3,7 +3,7 @@ $(function() {
         navigation: true,
         loopBottom: true,
         recordHistory: true,
-        sectionsColor : ['red', 'blue', 'green', 'yellow'],
+        sectionsColor : ['#F0EEBD', '#F7F1E5', '#F0CEBD'],
         verticalCentered: false,
         fixedElements: '.escalopa'
      });

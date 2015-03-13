@@ -16,9 +16,27 @@ body {
         }
     }
 }
+.MenuBarraSup {
+  top: 0;
+  left: 0;
+  list-style-type:none;
+  display:inline;
+}
 .escalopa {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+}
+.presentacion {
+  padding-top: 180px;
+  font-family: Trebuchet MS, Arial;
+  font-size: 22px;
+   color:white
+}
+.fondo1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: url(img/fondotazas.svg);
 }

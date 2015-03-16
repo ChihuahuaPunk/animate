@@ -30,8 +30,6 @@ body {
   height: 105px;
 }
 .MenuBarraSup {
-  top: 0;
-  left: 0;
   list-style-type:none;
   display:inline;
 }
@@ -43,13 +41,17 @@ body {
 }
 .presentacion {
   padding-top: 180px;
+  padding-left:50px;
+  padding-right:50px;
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 22px;
-   color:white
+   color:white;
 }
 .fondo1 {
   display: block;
   width: 100%;
-  height: auto;
+  height: 1000px;
+  repeat: repeat;
   background: url(../img/fondotazas.svg);
+  z-index:1;
 }

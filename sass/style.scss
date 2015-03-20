@@ -21,7 +21,7 @@ a {
 }
 .navigation {
   background: {
-    image: url(../img/topbarscall.svg);
+    image: url(../img/topbarscall.min.svg);
     size: cover;
     repeat: no-repeat;
   }
@@ -30,14 +30,15 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 105px;
+  height: 165px;
   text-align: center;
-}
-.navigation {
   li {
     list-style-type: none;
     font-size: 28px;
     display: inline-block;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
     a {
       font {
         family: 'Trebuchet MS', Arial, sans-serif;
@@ -45,9 +46,6 @@ a {
       color: rgba(255, 255, 255, 0.6);
     }
   }
-}
-.navigation li:not(:last-child) {
-  margin-right: 50px;
 }
 .escalopa {
   position: fixed;
@@ -68,6 +66,15 @@ a {
   width: 100%;
   height: 1000px;
   repeat: repeat;
-  background: url(../img/fondotazas.svg);
+  background: {
+    image: url(../img/fondotazas.min.svg);
+    size: cover;
+    position: center center;
+  }
   z-index:1;
+}
+.logo-animate {
+  position: absolute;
+  left: 3%;
+  top: 0;
 }

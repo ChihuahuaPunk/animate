@@ -19,11 +19,12 @@ body {
     }
 }
 a {
-    &:hover {
-    text-decoration: none;
-    }
     transition: .5s;
     text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
 }
 .navigation {
   background: {

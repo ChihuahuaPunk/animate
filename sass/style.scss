@@ -16,7 +16,11 @@ body {
     }
 }
 a {
-  transition: .5s
+    &:hover {
+    text-decoration: none;
+    }
+    transition: .5s;
+    text-decoration: none;
 }
 .navigation {
   background: {
@@ -40,6 +44,9 @@ a {
     margin-right: 50px;
     }
   a {
+    &:hover {
+    color: rgba(255, 255, 255, 0.9);
+    }
     font {
       family: 'Trebuchet MS', Arial, sans-serif;
     }
@@ -86,4 +93,7 @@ a {
   height: auto;
   left: 3%;
   top: 4%;
+}
+.form-control {
+  top: 700px;
 }

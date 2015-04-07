@@ -66,20 +66,12 @@ a {
 }
 .presentacion {
   padding: {
-    left: 50px;
-    right: 50px;
-    top: 190px;
+    top: 140px;
   }
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 18px;
   color:white;
   text-align: justify;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 60px;
-  -moz-column-gap: 60px;
-  column-gap: 60px;
 }
 .logo-animate {
   position: absolute;

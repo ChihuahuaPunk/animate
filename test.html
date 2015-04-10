@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tests</title>
+  <style>
+    .div-comun-oculto {
+      display: none;
+      width: 200px;
+      height: 200px;
+      float: left;
+    }
+    .uno {
+      background: red;
+    }
+    .dos {
+      background: blue;
+    }
+    .tres {
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+  <select name="select" id="select">
+    <option value="cero">Nada</option>
+    <option value="uno">Uno</option>
+    <option value="dos">Dos</option>
+    <option value="tres">Tres</option>
+    <option value="todos">Todos</option>
+  </select>
+  <div class="elementos">
+    <div class="div-comun-oculto uno">Uno</div>
+    <div class="div-comun-oculto dos">Dos</div>
+    <div class="div-comun-oculto tres">Tres</div>
+    <div class="div-comun-oculto uno">Uno</div>
+    <div class="div-comun-oculto dos">Dos</div>
+    <div class="div-comun-oculto tres">Tres</div>
+    <div class="div-comun-oculto uno">Uno</div>
+    <div class="div-comun-oculto dos">Dos</div>
+    <div class="div-comun-oculto tres">Tres</div>
+    <div class="div-comun-oculto uno">Uno</div>
+    <div class="div-comun-oculto dos">Dos</div>
+    <div class="div-comun-oculto tres">Tres</div>
+    <div class="div-comun-oculto uno">Uno</div>
+    <div class="div-comun-oculto dos">Dos</div>
+    <div class="div-comun-oculto tres">Tres</div>
+    <div class="div-comun-oculto uno">Uno</div>
+    <div class="div-comun-oculto dos">Dos</div>
+    <div class="div-comun-oculto tres">Tres</div>
+    <div class="div-comun-oculto uno">Uno</div>
+    <div class="div-comun-oculto dos">Dos</div>
+    <div class="div-comun-oculto tres">Tres</div>
+    <div class="div-comun-oculto uno">Uno</div>
+    <div class="div-comun-oculto dos">Dos</div>
+    <div class="div-comun-oculto tres">Tres</div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('#select').change(function(){
+        var laVariable = $(this).val();
+        var losElementos = $('.elementos div')
+
+         console.log(laVariable);
+         losElementos.fadeOut();
+         $('.' + laVariable).fadeIn();
+         if (laVariable === 'todos') {
+          losElementos.fadeIn();
+         }
+       });
+    });
+  </script>
+</body>
+</html>

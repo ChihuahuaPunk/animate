@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Anima-té</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/WallopSlider.css">
 </head>
 <body>
     <nav class="navigation">
@@ -78,6 +79,23 @@
                        </div><!--form-group-->
                     </div><!--col-md-6-->
              </div><!-- /.row -->
+            <div class="row">
+               <div class="wallop-slider">
+                  <ul class="wallop-slider__list">
+                      <li class="wallop-slider__item wallop-slider__item--current">
+                      <img src="path-to-image">
+                      </li>
+                      <li class="wallop-slider__item">
+                      <img src="path-to-image">
+                      </li>
+                      <li class="wallop-slider__item">
+                      <img src="path-to-image">
+                      </li>
+                   </ul>
+                   <button class="wallop-slider__btn wallop-slider__btn--previous" disabled="disabled">Previous</button>
+                   <button class="wallop-slider__btn wallop-slider__btn--next">Next</button>
+                </div><!-- /.Wallop-slider">
+            </div><!-- /.row -->
         </div><!-- /.section -->
         <div class="section">
                 <div class="row">
@@ -102,6 +120,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/WallopSlider.js"></script>
 
     <script src="js/main.js"></script>
 </body>

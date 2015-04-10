@@ -8,4 +8,6 @@ $(function() {
         fixedElements: '.navigation',
         anchors: ['presentacion', 'catalogo', 'contacto']
      });
+     var slider = new WallopSlider('.wallop-slider');
+
 });

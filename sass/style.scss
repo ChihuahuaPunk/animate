@@ -125,3 +125,25 @@ a {
   -moz-column-gap: 60px;
   column-gap: 60px;
 }
+.div-comun-oculto {
+  display: none;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.uno {
+  background: red;
+}
+.dos {
+  background: blue;
+}
+.tres {
+  background: yellow;
+}
+.elementos div {
+   transition: .4s;
+}
+.elementos div:hover {
+  transform: scale(2) rotate(360deg);
+  border: 1px solid red;
+}

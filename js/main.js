@@ -8,6 +8,18 @@ $(function() {
         fixedElements: '.navigation',
         anchors: ['presentacion', 'catalogo', 'contacto']
      });
-     var slider = new WallopSlider('.wallop-slider');
+     $('#select').change(function(){
+        var laVariable = $(this).val();
+        var losElementos = $('.elementos div')
 
+         console.log(laVariable);
+         losElementos.fadeOut();
+         $('.' + laVariable).fadeIn();
+         if (laVariable === 'todos') {
+          losElementos.fadeIn();
+         }
+       });
+      if ($('#select').val() === 'todos') {
+       $('.elementos div').fadeIn();
+     }
 });

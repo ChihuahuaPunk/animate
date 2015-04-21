@@ -22,4 +22,5 @@ $(function() {
       if ($('#select').val() === 'todos') {
        $('.elementos div').fadeIn();
      }
+     $('#select').chosen();
 });

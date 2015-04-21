@@ -137,30 +137,31 @@ a {
   -moz-column-gap: 60px;
   column-gap: 60px;
 }
-.div-comun-oculto {
+.un-sobre {
   display: none;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   float: left;
+  img {
+    width: 100%;
+  }
 }
-.uno {
-  background: red;
-}
-.dos {
-  background: blue;
-}
-.tres {
-  background: yellow;
-}
+
+
 .elementos div {
    transition: .4s;
 }
 .elementos div:hover {
   transform: scale(2) rotate(360deg);
-  border: 1px solid red;
 }
 .link-interesante a {
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 15px;
   color: #427400;
+}
+.full-width {
+  width: 100%;
+}
+#select {
+  width: 200px;
 }

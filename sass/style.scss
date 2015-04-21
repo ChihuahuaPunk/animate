@@ -107,9 +107,9 @@ a {
   width: 280px;
 }
 .contacto-y-link-parraf {
+  float: left;
   font-family: 'Trebuchet MS', Arial, sans-serif;
-  font-size: 17px;
-  color:white;
+  font-size: 18px;
   text-align: justify;
 }
 .wallop-slider__item img {
@@ -146,4 +146,9 @@ a {
 .elementos div:hover {
   transform: scale(2) rotate(360deg);
   border: 1px solid red;
+}
+.link-interesante a {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 15px;
+  color: #427400;
 }

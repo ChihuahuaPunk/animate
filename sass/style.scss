@@ -66,12 +66,16 @@ a {
 }
 .presentacion {
   padding: {
-    top: 140px;
+    top: 70px;
+  }
+  margin: {
+    left: 60px;
+    right: 60px;
   }
   font-family: 'Trebuchet MS', Arial, sans-serif;
-  font-size: 17px;
+  font-size: 26px;
   color:white;
-  text-align: justify;
+  text-align: center;
 }
 .logo-animate {
   position: absolute;
@@ -102,6 +106,18 @@ a {
   }
   z-index:1;
 }
+.slide-lincontacto {
+  display: block;
+  width: 100%;
+  height: 1000px;
+  repeat: repeat;
+  background: {
+    image: url(../img/fondotazasmnt.svg);
+    size: cover;
+    position: center center;
+  }
+  z-index:1;
+}
 .logo-animate {
   position: absolute;
   width:300px;
@@ -119,10 +135,8 @@ a {
   width: 280px;
 }
 .contacto-y-link-parraf {
-  float: left;
   font-family: 'Trebuchet MS', Arial, sans-serif;
-  font-size: 18px;
-  text-align: justify;
+  font-size: 15px;
 }
 .wallop-slider__item img {
   width: 490px;
@@ -133,9 +147,9 @@ a {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-  -webkit-column-gap: 60px;
-  -moz-column-gap: 60px;
-  column-gap: 60px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
 }
 .un-sobre {
   display: none;
@@ -152,7 +166,17 @@ a {
 .te-contacto-2 {
   background-color: rgba(144, 136, 165, 0.5)
 }
-
+.col-lincontacto {
+    padding: {
+    top: 70px;
+  }
+    margin: {
+    left: 5px;
+    right: 50px;
+  }
+  width: 290px;
+  height: 690px;
+}
 .elementos div {
    transition: .4s;
 }

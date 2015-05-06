@@ -77,6 +77,19 @@ a {
   color:white;
   text-align: center;
 }
+.presentacion-movil {
+  padding: {
+    top: 70px;
+  }
+  margin: {
+    left: 8px;
+    right: 8px;
+  }
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 19px;
+  color:white;
+  text-align: center;
+}
 .logo-animate {
   position: absolute;
   left: 3%;
@@ -176,6 +189,40 @@ a {
   }
   width: 290px;
   height: 690px;
+}
+.menu-movil {
+  font-size: 14px;
+  padding-top: 120px;
+  list-style-type: none;
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 8px;
+    }
+  a {
+    &:hover {
+    color: rgba(255, 255, 255, 0.9);
+    }
+    font {
+      family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    color: rgba(255, 255, 255, 0.6);
+   }
+}
+@media screen and (min-width: 250px) and (max-width: 579px){
+    .menu-movil {display:block;} /* mostrar */
+    .menu-full {display: none;}   /* no mostrar */
+}
+@media screen and (min-width: 580px) and (max-width: 2500px) {
+    .menu-movil {display: none;}   /* no mostrar */
+    .menu-full {display:block;} /* mostrar */
+}
+@media screen and (min-width: 250px) and (max-width: 579px){
+    .presentacion-movil {display:block;} /* mostrar */
+    .presentacion {display: none;}   /* no mostrar */
+}
+@media screen and (min-width: 580px) and (max-width: 2500px) {
+    .presentacion-movil {display: none;}   /* no mostrar */
+    .presentacion {display:block;} /* mostrar */
 }
 .elementos div {
    transition: .4s;

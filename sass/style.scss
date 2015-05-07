@@ -90,9 +90,14 @@ a {
   color:white;
   text-align: center;
 }
-.logo-animate {
+.logo-animate-full {
   position: absolute;
   left: 3%;
+  top: 0;
+}
+.logo-animate-movil {
+  position: absolute;
+  left: 2%;
   top: 0;
 }
 .slide-presentacion {
@@ -191,8 +196,8 @@ a {
   height: 690px;
 }
 .menu-movil {
-  font-size: 14px;
-  padding-top: 120px;
+  font-size: 19px;
+  padding-top: 2%;
   list-style-type: none;
   display: inline-block;
   &:not(:last-child) {
@@ -223,6 +228,14 @@ a {
 @media screen and (min-width: 580px) and (max-width: 2500px) {
     .presentacion-movil {display: none;}   /* no mostrar */
     .presentacion {display:block;} /* mostrar */
+}
+@media screen and (min-width: 250px) and (max-width: 579px){
+    .logo-animate-movil {display:block;} /* mostrar */
+    .logo-animate-full {display: none;}   /* no mostrar */
+}
+@media screen and (min-width: 580px) and (max-width: 2500px) {
+    .logo-animate-movil {display: none;}   /* no mostrar */
+    .logo-animate-full {display:block;} /* mostrar */
 }
 .elementos div {
    transition: .4s;

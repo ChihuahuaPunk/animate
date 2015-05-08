@@ -42,10 +42,10 @@ a {
 .textnav {
   padding-top:3%;
   list-style-type: none;
-  font-size: 28px;
+  font-size: 24px;
   display: inline-block;
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 10px;
     }
   a {
     &:hover {
@@ -92,13 +92,17 @@ a {
 }
 .logo-animate-full {
   position: absolute;
-  left: 3%;
-  top: 0;
+  width: 219px;
+  height: auto;
+  left: 2%;
+  top: 3%;
 }
 .logo-animate-movil {
   position: absolute;
+  height: 105px;
+  width: auto;
   left: 2%;
-  top: 0;
+  top: 2%;
 }
 .slide-presentacion {
   display: block;
@@ -138,7 +142,7 @@ a {
 }
 .logo-animate {
   position: absolute;
-  width:300px;
+  width: 300px;
   height: auto;
   left: 3%;
   top: 4%;
@@ -155,6 +159,9 @@ a {
 .contacto-y-link-parraf {
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 15px;
+}
+.link-interesante {
+  font-size: 14;
 }
 .wallop-slider__item img {
   width: 490px;
@@ -178,27 +185,14 @@ a {
     width: 100%;
   }
 }
-.te-contacto-1 {
-  background-color: rgba(197, 50, 94, 0.5)
-}
-.te-contacto-2 {
-  background-color: rgba(144, 136, 165, 0.5)
-}
 .col-lincontacto {
-    padding: {
-    top: 70px;
-  }
-    margin: {
-    left: 5px;
-    right: 50px;
-  }
-  width: 290px;
+  width: 50%;
   height: 690px;
 }
 .menu-movil {
   font-size: 19px;
   padding-top: 2%;
-  list-style-type: none;
+  list-style: none;
   display: inline-block;
   &:not(:last-child) {
     margin-right: 8px;
@@ -213,11 +207,20 @@ a {
     color: rgba(255, 255, 255, 0.6);
    }
 }
-@media screen and (min-width: 250px) and (max-width: 579px){
+.menu-full {
+  margin-left: 180px;
+}
+.menu-lincontacto {
+  list-style: none;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 16px;
+  color: #a0fa0f;
+}
+@media screen and (min-width: 250px) and (max-width: 759px){
     .menu-movil {display:block;} /* mostrar */
     .menu-full {display: none;}   /* no mostrar */
 }
-@media screen and (min-width: 580px) and (max-width: 2500px) {
+@media screen and (min-width: 760px) and (max-width: 2500px) {
     .menu-movil {display: none;}   /* no mostrar */
     .menu-full {display:block;} /* mostrar */
 }
@@ -243,14 +246,14 @@ a {
 .elementos div:hover {
   transform: scale(2) rotate(360deg);
 }
-.link-interesante a {
-  font-family: 'Trebuchet MS', Arial, sans-serif;
-  font-size: 15px;
-  color: #427400;
-}
 .full-width {
   width: 100%;
 }
 #select {
   width: 200px;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #ffff00 !important;
 }

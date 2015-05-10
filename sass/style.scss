@@ -40,7 +40,6 @@ a {
   height: 165px;
   text-align: center;
 .textnav {
-  padding-top:3%;
   list-style-type: none;
   font-size: 24px;
   display: inline-block;
@@ -58,6 +57,24 @@ a {
    }
   }
 }
+.movil-text-nav {
+  padding-top:3%;
+  list-style-type: none;
+  font-size: 24px;
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 2px;
+    }
+  a {
+    &:hover {
+    color: rgba(255, 255, 255, 0.9);
+    }
+    font {
+      family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    color: rgba(255, 255, 255, 0.6);
+   }
+  }
 .escalopa {
   position: fixed;
   top: 0;
@@ -190,13 +207,11 @@ a {
   height: 690px;
 }
 .menu-movil {
-  font-size: 19px;
-  padding-top: 2%;
-  list-style: none;
+  font-size: 9px;
+  margin-left: 110px;
+  padding-top: 6%;
+  list-style-type: none;
   display: inline-block;
-  &:not(:last-child) {
-    margin-right: 8px;
-    }
   a {
     &:hover {
     color: rgba(255, 255, 255, 0.9);
@@ -209,6 +224,7 @@ a {
 }
 .menu-full {
   margin-left: 180px;
+  padding-top: 4%;
 }
 .menu-lincontacto {
   list-style: none;
@@ -216,11 +232,11 @@ a {
   font-size: 16px;
   color: #a0fa0f;
 }
-@media screen and (min-width: 250px) and (max-width: 759px){
+@media screen and (min-width: 250px) and (max-width: 764px){
     .menu-movil {display:block;} /* mostrar */
     .menu-full {display: none;}   /* no mostrar */
 }
-@media screen and (min-width: 760px) and (max-width: 2500px) {
+@media screen and (min-width: 765px) and (max-width: 2500px) {
     .menu-movil {display: none;}   /* no mostrar */
     .menu-full {display:block;} /* mostrar */
 }

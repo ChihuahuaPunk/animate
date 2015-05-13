@@ -177,9 +177,6 @@ a {
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 15px;
 }
-.link-interesante {
-  font-size: 14;
-}
 .wallop-slider__item img {
   width: 490px;
   overflow: hidden;
@@ -204,26 +201,25 @@ a {
 }
 .col-lincontacto {
   width: 50%;
-  height: 690px;
 }
 .menu-movil {
-  font-size: 9px;
-  margin-left: 110px;
-  padding-top: 6%;
+  margin-left: 10%;
+  padding-top: 4%;
   list-style-type: none;
   display: inline-block;
   a {
     &:hover {
     color: rgba(255, 255, 255, 0.9);
     }
-    font {
+    font: {
       family: 'Trebuchet MS', Arial, sans-serif;
+      size: 14px;
     }
     color: rgba(255, 255, 255, 0.6);
    }
 }
 .menu-full {
-  margin-left: 180px;
+  margin-left: 12%;
   padding-top: 4%;
 }
 .menu-lincontacto {
@@ -231,6 +227,9 @@ a {
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 16px;
   color: #a0fa0f;
+}
+.titulo-contacto {
+  color: #FFA400;
 }
 @media screen and (min-width: 250px) and (max-width: 764px){
     .menu-movil {display:block;} /* mostrar */
@@ -268,8 +267,21 @@ a {
 #select {
   width: 200px;
 }
-
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span {
     background: #ffff00 !important;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border: none !important;
+    background: {
+      image: url(../img/tacita-fp-nav-li.svg) !important;
+      }
+    border-radius: none !important;
+    position: absolute;
+    z-index: 1;
 }

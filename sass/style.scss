@@ -93,6 +93,7 @@ a {
   font-size: 20px;
   color:white;
   text-align: center;
+  text-shadow: 3px 2px #374945;
 }
 .presentacion-movil {
   padding: {
@@ -102,6 +103,7 @@ a {
     left: 8px;
     right: 8px;
   }
+  text-shadow: 3px 2px #374945;
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 19px;
   color:white;
@@ -127,7 +129,7 @@ a {
   height: 1000px;
   repeat: repeat;
   background: {
-    image: url(../img/fondotazas.min.svg);
+    image: url(../img/fondoslide1.min.svg);
     size: cover;
     position: center center;
   }

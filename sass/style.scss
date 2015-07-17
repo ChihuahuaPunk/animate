@@ -223,9 +223,10 @@ a {
 }
 .contacto-ul {
   list-style-type: none;
+  font-size: 18px;
 }
 .titulo-contacto {
-  color: #FFA400;
+  color: #AB4506;
 }
 @media screen and (min-width: 250px) and (max-width: 764px){
     .menu-movil {display:block;} /* mostrar */
@@ -253,6 +254,7 @@ a {
 }
 .elementos div {
    transition: .4s;
+   padding-top: 15px;
 }
 .elementos div:hover {
   transform: scale(2) rotate(360deg);

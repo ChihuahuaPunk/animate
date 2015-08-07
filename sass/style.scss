@@ -267,7 +267,7 @@ a {
 }
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span {
-    background: #ffff00 !important;
+    background: #F2A6D9 !important;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -275,11 +275,12 @@ a {
     left: 2px;
     width: 16px;
     height: 16px;
-    border: none !important;
+    border: 0px !important;
     background: {
       image: url(../img/tacita-fp-nav-li.svg) !important;
       }
-    border-radius: none !important;
+    border-radius: 0% !important;
     position: absolute;
+    overflow: visible !important;
     z-index: 1;
 }
